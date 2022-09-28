@@ -8,6 +8,7 @@ import { store } from "./redux/store";
 
 //Import Files
 import MyCards from "./component/myCards/MyCards";
+import MyTeam from "./component/MyTeam";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<MyCards />} />
+          <Route path="/my-team" element={<MyTeam />} />
         </Routes>
       </Router>
     </Provider>
